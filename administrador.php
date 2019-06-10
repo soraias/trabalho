@@ -6,11 +6,17 @@ if(!isset($_SESSION["nome"])){
 ?>
 <html>
 	<head>
-		<title>Titulo</title>
+		<title>Administrador</title>
 	</head>
 	<body>
-		Olá, Administrador!<br><br>
-		Algum conteúdo de acesso restrito.<br><br>
+		<form class='form1'>
+		<h4>Adicionar aluno:<h4>
+		<label for='nome'>Nome:<label>
+		<input type='text' name='nome' id='nome'>
+		<label for='imagem'>Imagem: <label>
+		<input type= 'file' name='imagem' id='imagem'>
+		<button class='botao'>Adicionar<button>
+		</form>
 		<a href="sair.php">Sair</a>
 	</body>
 </html>
