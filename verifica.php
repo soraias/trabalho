@@ -4,20 +4,18 @@ if(isset($_POST) && $_POST["botao"] == "Entrar"){
 		session_start();
 		$_SESSION["nome"] = 'nome';
 		header("location: professor.php");
-/*	}else{
+	}else{
 		header("location: sair.php");*/
 	}
 
-	else if($_POST["login"] == "admin" && $_POST["senha"] == "admin"){
+	if($_POST["login"] == "admin" && $_POST["senha"] == "admin"){
 		session_start();
 		$_SESSION["nome"] = 'nome';
 		header("location: administrador.php");
-/*	}else{
+	}else{
 		header("location: sair.php");
-	}*/
-}
-}
-/*}else{
+	}
+}else{
 	header("location: sair.php");
-}*/
+}
 ?>
