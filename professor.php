@@ -6,11 +6,12 @@ if(!isset($_SESSION["nome"])){
 ?>
 <html>
 	<head>
-		<title>Titulo</title>
+		<title>Professor</title>
 	</head>
 	<body>
-		Olá, Professor!<br><br>
-		Algum conteúdo de acesso restrito.<br><br>
+		<form>
+		<button class='gerar'>Gerar espelho de classe<button>
 		<a href="sair.php">Sair</a>
+		</form>
 	</body>
 </html>
