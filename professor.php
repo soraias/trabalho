@@ -10,7 +10,9 @@ if(!isset($_SESSION["nome"])){
 	</head>
 	<body>
 		<form>
-		<button class='gerar'>Gerar espelho de classe<button>
+		<h4> Gerar Espelho de Classe </h4>
+		<button class='gerar_sala'>Sala de Aula</button>
+		<button class='gerar_lab'>Laboratório</button>
 		<a href="sair.php">Sair</a>
 		</form>
 	</body>
