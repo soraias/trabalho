@@ -35,20 +35,19 @@ if(!isset($_SESSION["nome"])){
 			</form>
 		</div> 
     </body>
-	<?php
-		$_FILES['imagem']['name'] = $_POST['nome'];
-		mkdir($_POST['imagens']);				
-		$caminho = 'imagens/'.$_FILES['imagem']['name'];
-		move_uploaded_file($_FILES['imagem']['tmp_name'], $caminho);
-						
-	?>
-	<script>
-		var botao = document.queryselector('.botao');
-		var imagens = [];
-		
+	<script type='text/javascript'>
+		let botao = document.queryselector('.botao');
+		let img = document.queryselector('#imagem');
+		let imagens = [];
+	
 		botao.addeventlistener('click', function(e){
-			imagens.push();	
-			
+			<?php
+				$_FILES['imagem']['name'] = .$_POST['nome'];
+				mkdir($_POST['imagens']);				
+				$caminho = 'imagens/'.$_FILES['imagem']['name'];
+				move_uploaded_file($_FILES['imagem']['tmp_name'], $caminho);		
+			?>
+			imagens.push(<?php $_FILES['imagem']?>);	
 		});
 	</script>
 						
