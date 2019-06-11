@@ -37,13 +37,12 @@ if(!isset($_SESSION["nome"])){
     </body>
 	<script type='text/javascript'>
 		let botao = document.queryselector('.botao');
-		let img = document.queryselector('#imagem');
 		let imagens = [];
+		<?php mkdir($_POST['imagens']);?>
 	
 		botao.addeventlistener('click', function(e){
 			<?php
-				$_FILES['imagem']['name'] = .$_POST['nome'];
-				mkdir($_POST['imagens']);				
+				$_FILES['imagem']['name'] = .$_POST['nome'];				
 				$caminho = 'imagens/'.$_FILES['imagem']['name'];
 				move_uploaded_file($_FILES['imagem']['tmp_name'], $caminho);		
 			?>
