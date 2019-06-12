@@ -15,6 +15,9 @@ if(!isset($_SESSION["nome"])){
     <body>
 	<div id="container">
         	<form class="form">
+			<nav class='nav'>
+				<a href="sair.php">Sair</a>
+                	</nav>
 			<div class = "radio">
                 		<input type='radio' name='espelho' value='Sala'>Sala de Aula
                 		<input type='radio' name='espelho' value='Lab'> Laboratório
@@ -22,9 +25,6 @@ if(!isset($_SESSION["nome"])){
                 	<section class='section'>
 				<button class='gerar'>Gerar espelho de classe<button>
                 	</section>
-			<nav class='nav'>
-				<a href="sair.php">Sair</a>
-                	</nav>
                 	<footer class='footer'>
                     		<h4>Desenvolvido por Andressa, Luana e Soraia</h4>    
                 	</footer>
