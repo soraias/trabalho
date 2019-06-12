@@ -5,7 +5,7 @@ if(isset($_POST) && $_POST["botao"] == "Entrar"){
 		$_SESSION["nome"] = 'nome';
 		header("location: professor.php");
 	}else{
-		header("location: sair.php");*/
+		header("location: sair.php");
 	}
 
 	if($_POST["login"] == "admin" && $_POST["senha"] == "admin"){
