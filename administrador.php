@@ -13,28 +13,24 @@ if(!isset($_SESSION["nome"])){
         <link href="estilo.css" rel="stylesheet">
     </head>
     <body>
-		<div id="container">
+	<div id="container">
         	<form class="form">
-				<header class='header'>
-                    
-				</header>
-				<nav class='nav'>
-					<a href="sair.php">Sair</a>
-				</nav>
-				<section class='section'>
-					<h4>Adicionar aluno:<h4>
-					<label for='nome'>Nome:<label>
-					<input type='text' name='nome' id='nome'>
-					<label for='imagem'>Imagem: <label>
-					<input type='file' name='imagem' id='imagem'>
-					<button class='botao'>Adicionar<button>
-					</section>
-				<footer class='footer'>
-					<h4>Desenvolvido por Andressa, Luana e Soraia</h4>    
-				</footer>
-			</form>
-		</div> 
+			<section class='section'>
+				<h4>Adicionar aluno:</h4>
+				<label for='nome'>Nome: </label>
+				<input type='text' name='nome' id='nome'>
+				<label for='imagem'>Imagem: </label>
+				<input type='file' name='imagem' id='imagem'>
+				<button class='botao'>Adicionar</button>
+			</section>
+			<nav class='nav'>
+				<a href="sair.php">Sair</a>
+			</nav>
+			<footer class='footer'>
+				<h4>Desenvolvido por Andressa, Luana e Soraia</h4>    
+			</footer>
+		</form>
+	</div> 
     </body>
-	<script type='text/javascript' src='main.js'>
-			
+	<script type='text/javascript' src='main.js'>		
 </html>
