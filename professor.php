@@ -13,24 +13,22 @@ if(!isset($_SESSION["nome"])){
         <link href="estilo.css" rel="stylesheet">
     </head>
     <body>
-		<div id="container">
+	<div id="container">
         	<form class="form">
-				<header class='header'>
-                    
-                </header>
-                <nav class='nav'>
-					<a href="sair.php">Sair</a>
-                </nav>
-                <section class='section'>
-					<button class='gerar'>Gerar espelho de classe<button>
-                </section>
-                <footer class='footer'>
-                    <h4>Desenvolvido por Andressa, Luana e Soraia</h4>    
-                </footer>
-
-
-
-			</form>
-		</div>     
+			<div class = "radio">
+                		<input type='radio' name='espelho' value='Sala'>Sala de Aula
+                		<input type='radio' name='espelho' value='Lab'> Laboratório
+			</div>
+                	<section class='section'>
+				<button class='gerar'>Gerar espelho de classe<button>
+                	</section>
+			<nav class='nav'>
+				<a href="sair.php">Sair</a>
+                	</nav>
+                	<footer class='footer'>
+                    		<h4>Desenvolvido por Andressa, Luana e Soraia</h4>    
+                	</footer>
+		</form>
+	</div>     
     </body>
 </html>
