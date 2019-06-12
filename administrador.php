@@ -15,6 +15,9 @@ if(!isset($_SESSION["nome"])){
     <body>
 	<div id="container">
         	<form class="form">
+			<nav class='nav'>
+				<a href="sair.php">Sair</a>
+			</nav>
 			<section class='section'>
 				<h4>Adicionar aluno:</h4>
 				<label for='nome'>Nome: </label>
@@ -23,9 +26,6 @@ if(!isset($_SESSION["nome"])){
 				<input type='file' name='imagem' id='imagem'>
 				<button class='botao'>Adicionar</button>
 			</section>
-			<nav class='nav'>
-				<a href="sair.php">Sair</a>
-			</nav>
 			<footer class='footer'>
 				<h4>Desenvolvido por Andressa, Luana e Soraia</h4>    
 			</footer>
