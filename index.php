@@ -9,16 +9,18 @@
     </head>
     <body>
         <div id="container">
+        <header> 
+		Sorteio da Turma
+         </header>
         	<form class="form" method="post" action="verifica.php">
-                	<section class='section'>
-                    		Login: <input type="text" name="login"><br>
-                    		Senha: <input type="password" name="senha"><br>
-                    		<input type="submit" name="botao" value="Entrar">    
-                    	</section>
-                	<footer class='footer'>
-                    		<h4>Desenvolvido por Andressa, Luana e Soraia</h4>    
-               		</footer>
-		</form>
-	</div>     
+                    Login: <input type="text" name="login"><br>
+                    Senha: <input type="password" name="senha"><br>
+                    <input type="submit" name="botao" value="Entrar">    
+                  
+            </form>
+            <footer class='footer'>
+                    <h4>Desenvolvido por Andressa, Luana e Soraia</h4>    
+                </footer>
+		</div>     
     </body>
 </html>
