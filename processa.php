@@ -15,8 +15,10 @@ if($_FILES['imagem']['name'] == imagem){
 	echo "<script type='text/javascript'>alert('Aluno adicionado com sucesso!!');";
 	echo "javascript:window.location='administrador.php';</script>";
 }
+?>;
 });
 </script>
+<?php
 $direcao = 'imagens/';
 $diretorio = opendir($direcao);
 $imagens = array();
