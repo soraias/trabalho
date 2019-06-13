@@ -9,6 +9,16 @@ if($_FILES['imagem']['name'] == imagem){
 	move_uploaded_file($_FILES['imagem']['tmp_name'], $caminho);
 	echo "<script type='text/javascript'>alert('Aluno adicionado com sucesso!!');";
 	echo "javascript:window.location='administrador.php';</script>";
+}
+$direcao = 'imagens/';
+$diretorio = dir($direcao);
+$pasta = array();
+
+while( $imagem = $diretorio -> read()){
+	for($i= 0 $i > $diretorio.length $i++){
+		$pasta = array( [$i] = $_FILES['imagem']['name']);
+	}
+}
 ?>
 
 	
