@@ -11,15 +11,14 @@ if($_FILES['imagem']['name'] == imagem){
 	echo "javascript:window.location='administrador.php';</script>";
 }
 $direcao = 'imagens/';
-$diretorio = dir($direcao);
-$pasta = array();
+$diretorio = opendir($direcao);
+$imagens = array();
 
-while( $imagem = $diretorio -> read()){
-	for($i= 0 $i > $diretorio.length $i++){
-		$pasta = array( [$i] = $_FILES['imagem']['name']);
-	}
+while( false !== ($filename = readdir($diretorio))){
+	array_push($imagens, $filename);
 }
 ?>
+<scripttype='text/javascript'>
+let imagens = new Array();
 
-	
-
+</script>
