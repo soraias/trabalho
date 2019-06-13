@@ -18,7 +18,4 @@ while( false !== ($filename = readdir($diretorio))){
 	array_push($imagens, $filename);
 }
 ?>
-<scripttype='text/javascript'>
-let imagens = new Array();
 
-</script>
