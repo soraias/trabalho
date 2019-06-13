@@ -14,7 +14,7 @@ if(!isset($_SESSION["nome"])){
     </head>
     <body>
 	<div id="container">
-        	<form class="form">
+        	<form class="form" method="post" >
 			<nav class='nav'>
 				<a href="sair.php">Sair</a>
 			</nav>
@@ -26,11 +26,10 @@ if(!isset($_SESSION["nome"])){
 				<input type='file' name='imagem' id='imagem'>
 				<button class='botao'>Adicionar</button>
 			</section>
-			<footer class='footer'>
+		</form>
+		<footer class='footer'>
 				<h4>Desenvolvido por Andressa, Luana e Soraia</h4>    
 			</footer>
-		</form>
 	</div> 
-    </body>
-	<script type='text/javascript' src='main.js'>		
+    </body>	
 </html>
