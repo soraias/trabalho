@@ -1,4 +1,9 @@
+<script type='text/javascript'>
 
+var botao = document.queryselector('.botao');
+
+botao.addeventlistener('click', function(e){
+	e.preventdefault();
 <?php
 if($_FILES['imagem']['name'] == imagem){
 	echo "<script type='text/javascript'>alert('Este aluno já foi adicionado!');";
@@ -10,6 +15,8 @@ if($_FILES['imagem']['name'] == imagem){
 	echo "<script type='text/javascript'>alert('Aluno adicionado com sucesso!!');";
 	echo "javascript:window.location='administrador.php';</script>";
 }
+});
+</script>
 $direcao = 'imagens/';
 $diretorio = opendir($direcao);
 $imagens = array();
