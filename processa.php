@@ -27,4 +27,9 @@ while( false !== ($filename = readdir($diretorio))){
 	array_push($imagens, $filename);
 }
 ?>
-
+<script type='text/javascript'>
+	let gerar = document.queryselector('.gerar');
+	
+	gerar.addeventlistener('click', funtion(e) {
+		e.preventdefault();
+</script>
