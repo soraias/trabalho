@@ -33,8 +33,8 @@ function gerar(){
 		echo $imagem;
 	}
 }
-?>
-<script type='text/javascript'>
+
+/*<script type='text/javascript'>
 	var gerar = document.queryselector('.gerar');
 	var opcao = documento.queryselector('input[name=espelho]:checked').value;
 	gerar.addeventlistener('click', funtion(e) {
@@ -47,4 +47,4 @@ function gerar(){
 			print.print();
 		}
 		
-</script>
+</script>*/
