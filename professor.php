@@ -22,7 +22,7 @@ if(!isset($_SESSION["nome"])){
                 		<input type='radio' name='espelho' value=1>Sala de Aula
                 		<input type='radio' name='espelho' value=2> Laboratório
 			</div>
-            		<button class='gerar'>Gerar espelho de classe<button>
+            		<input type="submit" name="botao" value="Gerar">
                
 		</form>		
                 <footer class='footer'>
