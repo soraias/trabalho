@@ -10,7 +10,7 @@
     <body>
         <div id="container">
         <header> 
-		Sorteio da Turma
+		<h3>Sorteio da Turma</h3>
          </header>
         	<form class="form" method="post" action="verifica.php">
                     Login: <input type="text" name="login"><br>
