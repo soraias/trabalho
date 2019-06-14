@@ -14,7 +14,7 @@ if(!isset($_SESSION["nome"])){
     </head>
     <body>
 	<div id="container">
-        	<form method='post' enctype='multipart/form-data'>
+        	<form method='post' enctype='multipart/form-data' action='processa.php'>
 			<nav class='nav'>
 				<a href="sair.php">Sair</a>
                 	</nav>
