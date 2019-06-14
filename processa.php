@@ -35,11 +35,16 @@ function gerar(){
 }
 ?>
 <script type='text/javascript'>
-	let gerar = document.queryselector('.gerar');
-	
+	var gerar = document.queryselector('.gerar');
+	var opcao = documento.queryselector('input[name=espelho]:checked').value;
 	gerar.addeventlistener('click', funtion(e) {
 		e.preventdefault();
-		var print = <?php gerar(); ?>;
-		print.print();
+		if(opcao == 1){
+			var print = <?php gerar(); ?>;
+			print.print();
+		}else if(opcao == 2){
+			var print = <?php gerar(); ?>;
+			print.print();
+		}
 		
 </script>
