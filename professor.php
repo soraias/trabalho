@@ -14,7 +14,7 @@ if(!isset($_SESSION["nome"])){
     </head>
     <body>
 	<div id="container">
-        	<form method='post' enctype='multipart/form-data' ='processa.php'>
+        	<form method='post' enctype='multipart/form-data'>
 			<nav class='nav'>
 				<a href="sair.php">Sair</a>
                 	</nav>
@@ -22,13 +22,12 @@ if(!isset($_SESSION["nome"])){
                 		<input type='radio' name='espelho' value='Sala'>Sala de Aula
                 		<input type='radio' name='espelho' value='Lab'> Laboratório
 			</div>
-                	<section class='section'>
-				<button class='gerar'>Gerar espelho de classe<button>
-                	</section>
-                	<footer class='footer'>
-                    		<h4>Desenvolvido por Andressa, Luana e Soraia</h4>    
-                	</footer>
-		</form>
+            		<button class='gerar'>Gerar espelho de classe<button>
+               
+		</form>		
+                <footer class='footer'>
+                    	<h4>Desenvolvido por Andressa, Luana e Soraia</h4>    
+                </footer>
 	</div>     
     </body>
 </html>
