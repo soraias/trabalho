@@ -26,10 +26,20 @@ $imagens = array();
 while( false !== ($filename = readdir($diretorio))){
 	array_push($imagens, $filename);
 }
+
+function gerar(){
+	shuffle($imagens);
+	foreach($imagens as $imagem){
+		echo $imagem;
+	}
+}
 ?>
 <script type='text/javascript'>
 	let gerar = document.queryselector('.gerar');
 	
 	gerar.addeventlistener('click', funtion(e) {
 		e.preventdefault();
+		var print = <?php gerar(); ?>;
+		print.print();
+		
 </script>
