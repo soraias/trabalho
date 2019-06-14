@@ -1,6 +1,6 @@
 <?php
 if(isset($_POST) && $_POST["botao"] == "Entrar"){
-  if($_POST["login"] == "professor" && $_POST["senha"] == "professor"){
+ 	if($_POST["login"] == "professor" && $_POST["senha"] == "professor"){
 		session_start();
 		$_SESSION["nome"] = 'nome';
 		header("location: professor.php");
