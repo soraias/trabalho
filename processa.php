@@ -33,7 +33,6 @@ function gerar(){
 		echo $imagem;
 	}
 }
-
 if(isset($_POST) && $_POST["botao"] == "Gerar"){
 	$espelho = $_POST['espelho'];
 	if($espelho == 1){
@@ -45,13 +44,7 @@ if(isset($_POST) && $_POST["botao"] == "Gerar"){
 		$_SESSION["nome"] = 'nome';
 		header("location: laboratorio.php");
 	}
-	
-	
-	
-	
-	
 }
-
 /*<script type='text/javascript'>
 	var gerar = document.queryselector('.gerar');
 	var opcao = documento.queryselector('input[name=espelho]:checked').value;
