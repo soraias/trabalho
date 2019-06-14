@@ -34,6 +34,20 @@ function gerar(){
 	}
 }
 
+if(isset($_POST) && $_POST["botao"] == "Gerar"){
+	$espelho = $_POST['espelho'];
+	if($espelho == 1){
+	
+	}else if($espelho == 2){
+		
+	}
+	
+	
+	
+	
+	
+}
+
 /*<script type='text/javascript'>
 	var gerar = document.queryselector('.gerar');
 	var opcao = documento.queryselector('input[name=espelho]:checked').value;
