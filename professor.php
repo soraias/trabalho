@@ -19,8 +19,8 @@ if(!isset($_SESSION["nome"])){
 				<a href="sair.php">Sair</a>
                 	</nav>
 			<div class = "radio">
-                		<input type='radio' name='espelho' value='Sala'>Sala de Aula
-                		<input type='radio' name='espelho' value='Lab'> Laboratório
+                		<input type='radio' name='espelho' value=1>Sala de Aula
+                		<input type='radio' name='espelho' value=2> Laboratório
 			</div>
             		<button class='gerar'>Gerar espelho de classe<button>
                
