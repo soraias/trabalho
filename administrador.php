@@ -4,7 +4,6 @@ if(!isset($_SESSION["nome"])){
 	header("location: sair.php");
 }
 ?>
-
 <html lang="en">
     <head>
         <title>Administrador</title>
@@ -14,7 +13,7 @@ if(!isset($_SESSION["nome"])){
     </head>
     <body>
 	<div id="container">
-        	<form class='form' method='post' enctype='multipart/form-data>
+        	<form class='form' method='post' enctype='multipart/form-data' action='processa.php'>
 			<nav class='nav'>
 				<a href="sair.php">Sair</a>
 			</nav>
